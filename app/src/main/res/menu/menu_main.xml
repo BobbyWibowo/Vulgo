@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.fiery.bobby.vulgo.MainActivity">
+
+    <item
+        android:id="@+id/action_subscribe"
+        android:title="@string/menu_subscribe"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_unsubscribe"
+        android:title="@string/menu_unsubscribe"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_token"
+        android:title="@string/menu_token"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/menu_logout"
+        android:visible="true"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.fiery.bobby.vulgo.BroadcastDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/broadcast_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_title"
+                style="@style/TextContent"
+                android:text="@string/title"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/description"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_item_description"
+                style="@style/TextContent"
+                android:text="@string/description"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1" />
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/author"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_item_author"
+                style="@style/TextContent"
+                android:text="@string/author"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1" />
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/contact"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_item_contact"
+                style="@style/TextContent"
+                android:text="@string/contact"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1" />
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/date"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_item_date"
+                style="@style/TextContent"
+                android:text="@string/date"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1" />
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/reward"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_item_reward"
+                style="@style/TextContent"
+                android:text="@string/reward_default"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1" />
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/location_subtitle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_item_location"
+                style="@style/TextContent"
+                android:text="@string/location_load"
+                android:layout_marginBottom="8dp"
+                android:lineSpacingMultiplier="1" />
+
+            <TextView
+                android:id="@+id/tv_item_distance"
+                style="@style/TextContent"
+                android:text="@string/distance_unknown"
+                android:textSize="12sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1" />
+
+            <Button
+                android:id="@+id/button_view_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="@string/button_view_location"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/broadcast_text_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:weightSum="1.0">
+
+            <EditText
+                android:id="@+id/field_comment_text"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:maxLines="1"
+                android:nextFocusUp="@id/field_comment_text"
+                android:nextFocusDown="@id/field_comment_text"
+                android:hint="@string/write_a_comment"/>
+
+            <Button
+                android:id="@+id/button_post_comment"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@string/send_comment"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/comment_form"
+            tools:listitem="@layout/item_comment" />
+
+    </RelativeLayout>
+
+</ScrollView>

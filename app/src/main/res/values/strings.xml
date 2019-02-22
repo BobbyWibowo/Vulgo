@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Vulgo</string>
+
+    <string name="default_notification_channel_id">vulgo</string>
+    <string name="default_notification_channel_name">Vulgo</string>
+
+    <string name="auth_failed">Otentikasi gagal!</string>
+    <string name="auth_failed_google">Otentikasi dengan akun Google gagal!</string>
+
+    <string name="action_settings">Pengaturan</string>
+    <string name="menu_login">Masuk</string>
+    <string name="menu_subscribe">Aktifkan notifikasi</string>
+    <string name="menu_unsubscribe">Nonaktifkan notifikasi</string>
+    <string name="menu_token">Dapatkan token</string>
+    <string name="menu_logout">Keluar</string>
+    <string name="menu_delete">Hapus</string>
+    <string name="login_label">Masuk</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Kata sandi</string>
+    <string name="title_sign_in">Selamat datang</string>
+    <string name="sign_in">Masuk</string>
+
+    <string name="heading_recent">Terbaru</string>
+    <string name="heading_mine">Milik Kamu</string>
+
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="ok">OK</string>
+    <string name="your_token">%1$s</string>
+
+    <string name="loading">Memuat&#8230;</string>
+    <string name="share">Bagikan</string>
+    <string name="share_via">Bagikan dengan&#8230;</string>
+    <string name="picture_via">Pilih foto&#8230;</string>
+    <string name="share_message">%1$s\nhttp://www.google.com/maps/place/%2$s,%3$s\n\n%4$s\n\nKontak:\n%5$s</string>
+
+    <string name="fragment_empty">Tidak ada broadcast.</string>
+
+    <string name="write_your_description">Deskripsi&#8230;</string>
+    <string name="write_your_contact">Kontak kamu&#8230;</string>
+    <string name="write_your_reward">Imbalan kamu (opsional)&#8230;</string>
+
+    <string name="new_broadcast_activity_title">Buat baru</string>
+    <string name="broadcast_activity_title">Detail</string>
+
+    <string name="user_profile_load">Memuat profil user&#8230;</string>
+
+    <string name="alert_missing_play_services_message">Kami tidak dapat menemukan Google Play Services pada perangkat kamu.\nGoogle Play Services diperlukan untuk memastikan fitur-fitur kritis pada aplikasi dapat digunakan, seperti masuk dengan menggunakan akun, menggunakan peta, dan sebagainya.\n\nCoba kembali aplikasi ini setelah memasang Google Play Services.\n\nTerima kasih!</string>
+    <string name="alert_sign_up_message">Apakah kamu yakin ingin melanjutkan?</string>
+    <string name="alert_sign_out_message">Apakah kamu yakin ingin keluar?</string>
+    <string name="alert_delete_broadcast_message">Apakah kamu yakin ingin menghapus broadcast ini?</string>
+    <string name="alert_new_broadcast_message">Apakah kamu yakin ingin melanjutkan?</string>
+
+    <string name="broadcast_writing">Membuat broadcast baru&#8230;</string>
+    <string name="broadcast_upload_progress">Mengunggah foto %1$.0f%%&#8230;</string>
+    <string name="broadcast_sent">Broadcast telah dibuat!</string>
+    <string name="broadcast_load_failure">Gagal memuat broadcast&#8230;</string>
+    <string name="broadcast_deleting">Menghapus broadcast&#8230;</string>
+    <string name="broadcast_deleted">Broadcast telah dihapus!</string>
+    <string name="broadcast_deleted_failure">Gagal menghapus broadcast! Coba lagi?</string>
+    <string name="broadcast_remotely_deleted">Broadcast telah dihapus oleh server!</string>
+    <string name="broadcast_can_not_delete">Kamu tidak dapat menghapus broadcast ini!</string>
+    <string name="broadcast_upload_failure">Gagal mengunggah foto!</string>
+    <string name="broadcast_create_failure">Gagal membuat broadcast!</string>
+
+    <string name="comment_load_failure">Gagal memuat komentar&#8230;</string>
+
+    <string name="title">Judul</string>
+    <string name="description">Deskripsi</string>
+    <string name="date">Dibuat pada</string>
+    <string name="author">Pemilik</string>
+    <string name="contact">Kontak</string>
+    <string name="reward">Imbalan</string>
+    <string name="reward_default">Imbalan tidak tertera.</string>
+
+    <string name="location_load">Memuat alamat lokasi&#8230;</string>
+    <string name="location_address_failure">Gagal memuat alamat lokasi!</string>
+    <string name="location_missing">Lokasi tidak tersedia!</string>
+    <string name="location_inline">%1$s, %2$s</string>
+    <string name="location">&#8230;</string>
+    <string name="location_subtitle">Lokasi</string>
+    <string name="location_required">Lokasi harus dipilih!</string>
+
+    <string name="distance_unknown">Jarak ke lokasi kamu tidak diketahui.</string>
+    <string name="distance">Jarak dari lokasi kamu: %1$s km.</string>
+
+    <string name="write_a_comment">Tulis komentar&#8230;</string>
+    <string name="send_comment">Kirim</string>
+    <string name="comment_sent">Komentar kamu telah terkirim!</string>
+
+    <string name="comment_min_max">Komentar minimal %1$s karakter dan maksimal %2$s karakter!</string>
+
+    <string name="button_set_location">Atur lokasi</string>
+    <string name="button_view_location">Lihat di peta</string>
+    <string name="button_set_photo">Pilih foto (opsional)</string>
+
+    <string name="required">Tidak boleh kosong!</string>
+    <string name="password_length_error">Kata sandi tidak boleh kurang dari 6 karakter!</string>
+
+    <string name="hint_name">Nama lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Kata sandi</string>
+    <string name="hint_repeat_password">Ulangi kata sandi</string>
+
+    <string name="user_load_failure">Gagal memuat profil user. Coba lagi?</string>
+    <string name="logged_in_as">Kamu masuk sebagai %1$s.</string>
+    <string name="logout_toast">Sampai jumpa lagi!</string>
+
+    <!-- SignInActivity -->
+    <string name="sign_in_activity_title">Masuk</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="sign_up_textview"><u>Belum punya akun? Daftar sekarang!</u></string>
+
+    <!-- SignUpActivity -->
+    <string name="sign_up_activity_title">Daftar</string>
+    <string name="sign_up_button">Daftar</string>
+    <string name="sign_up_failed">Gagal mendaftar. Coba lagi?</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_view_maps">Map</string>
+</resources>
